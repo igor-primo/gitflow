@@ -12,6 +12,10 @@
 
   languages.nix.enable = true;
 
+  scripts.gp.exec = ''kubectl -n $1 get pods'';
+  scripts.gap.exec = ''kubectl get pods -A'';
+  scripts.li.exec = ''kubectl -n $1 logs -f $2'';
+
   scripts.start.exec = ''
     docker start kind-control-plane kind-worker kind-worker2
   '';
