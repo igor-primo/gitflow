@@ -12,5 +12,8 @@ dependencies:
 - name: jenkins
   repository: https://charts.jenkins.io
   version: 5.0.14
-digest: sha256:cb97632b96dc81e0fc7dbd124938597ecb850133834905a3b6686cdf2436b895
-generated: "2024-11-26T08:40:23.072295593-03:00"
+- name: sonarqube
+  repository: https://SonarSource.github.io/helm-chart-sonarqube
+  version: 10.4.0+2288
+digest: sha256:6f45d47512099c0e985bd5cbc04d49cabdace655be02ae65c03a59472e3d464e
+generated: "2024-11-27T17:36:24.111301565-03:00"
