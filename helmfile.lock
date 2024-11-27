@@ -1,5 +1,8 @@
 version: v0.162.0
 dependencies:
+- name: argo-cd
+  repository: https://argoproj.github.io/argo-helm
+  version: 6.2.3
 - name: gitea
   repository: https://dl.gitea.com/charts
   version: 10.1.1
@@ -15,5 +18,5 @@ dependencies:
 - name: sonarqube
   repository: https://SonarSource.github.io/helm-chart-sonarqube
   version: 10.4.0+2288
-digest: sha256:6f45d47512099c0e985bd5cbc04d49cabdace655be02ae65c03a59472e3d464e
-generated: "2024-11-27T17:36:24.111301565-03:00"
+digest: sha256:499bc73f60880ac9a80637e904cf6a64279555d36de180581564cf92c2d04a7b
+generated: "2024-11-27T18:09:43.291356768-03:00"
