@@ -8,8 +8,17 @@ nodes:
     nodeRegistration:
       kubeletExtraArgs:
         node-labels: "ingress-ready=true"
+  extraMounts:
+    - hostPath: .volumes
+      containerPath: /var/local-path-provisioner
 - role: worker
+  extraMounts:
+    - hostPath: .volumes
+      containerPath: /var/local-path-provisioner
 - role: worker
+  extraMounts:
+    - hostPath: .volumes
+      containerPath: /var/local-path-provisioner
 containerdConfigPatches:
   - |
     [plugins."io.containerd.grpc.v1.cri."registry.mirrors."harbor.localhost.com"]
